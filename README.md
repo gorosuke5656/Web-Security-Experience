@@ -37,9 +37,10 @@ https://paiza.cloud/ja/<br>
 scripts配下に以下を格納しています<br>
 　　　[使用したコードの格納場所](./script)<br>
 １ XSS.zip ：XSS体験<br>
+２　
 ２ CSRF.zip：CSRF体験<br>
-３ SQLインジェクション.zip:　ＳＱＬインジェクション体験<br>
-４ QSコマンドインジェクション.zip:ＱＳコマンドインジェクション体験<br>
+３ SQLインジェクション.zip:　SQLi体験<br>
+４ QSコマンドインジェクション.zip: OSコマンドインジェクション体験<br>
 　〇　ワンライナーWebサーバ.zip : 模擬悪性サイトの起動要領<br>
   
   
