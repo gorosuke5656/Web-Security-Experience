@@ -22,12 +22,18 @@
     　　[次のチャプターへ進む](./CSRF_VulnerabilityCountermeasures.md)<br>
     　(3) SQLインジェクション<br>
 　　ア　SQLIの脆弱性体験<br>
-     [次のチャプターへ進む](./SQLi.md)<br>
+        [次のチャプターへ進む](./SQLi.md)<br>
     イ　SQLiの脆弱性対策<br>
-    
+    　  [次のチャプターへ進む](./SQLi_VulnerabilityCountermeasures.md)<br>
+
+ (3) デイレクトリートラバーサル<br>
+    ア　デイレクトリートラバーサルの脆弱性体験<br>
+
+    イ　デイレクトリートラバーサルの脆弱性対策<br>
      
-(4) OSコマンドインジェクション<br>
+ (4) OSコマンドインジェクション<br>
      [次のチャプターへ進む](./SQLi.md)<br>
+
 ５　本環境の使用方法<br>
      [次のチャプターへ進む](./How-to-use.md)<br>
 使用する際はPaiza cloudへのアカウント登録が必要です（無料版で問題ありません）<br>
