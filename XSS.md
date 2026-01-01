@@ -42,7 +42,6 @@
 ![Diagram](./images/xss-9.jpg)<br>
 ![Diagram](./images/xss-10.jpg)<br>
 ![Diagram](./images/xss-11.jpg)<br>
-![Diagram](./images/xss-12.jpg)<br>
 
 #### 異常な動作を確認します（その１）<br>
 〇自身のホスト（ブラウザ）からXSS.phpにアクセスします<br>
