@@ -38,10 +38,10 @@
 〇入力した情報を確認し登録を実施します<br>
 〇登録された旨が表示されます<br>
 
-![Diagram](./images/xss-8.jpg)<br>
-![Diagram](./images/xss-9.jpg)<br>
-![Diagram](./images/xss-10.jpg)<br>
-![Diagram](./images/xss-11.jpg)<br>
+![Diagram](./images/XSS/xss-8.jpg)<br>
+![Diagram](./images/XSS/xss-9.jpg)<br>
+![Diagram](./images/XSS/xss-10.jpg)<br>
+![Diagram](./images/XSS/xss-11.jpg)<br>
 
 #### 異常な動作を確認します（その１）<br>
 〇自身のホスト（ブラウザ）からXSS.phpにアクセスします<br>
