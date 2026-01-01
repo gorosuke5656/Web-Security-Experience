@@ -28,11 +28,13 @@
 
  (3) デイレクトリートラバーサル<br>
     ア　デイレクトリートラバーサルの脆弱性体験<br>
-
-    イ　デイレクトリートラバーサルの脆弱性対策<br>
-     
+　　　　[次のチャプターへ進む](./Directory_traversal.md)<br>
+    イ　デイレクトリートラバーサルの脆弱性対策<br
+     　[次のチャプターへ進む](./Directory_traversal_VulnerabilityCountermeasures.md)<br>
  (4) OSコマンドインジェクション<br>
-     [次のチャプターへ進む](./SQLi.md)<br>
+ 　　ア　OSコマンドインジェクションの脆弱性体験<br>
+ 　　　[次のチャプターへ進む](./OSCommandInjection.md)<br>
+
 
 ５　本環境の使用方法<br>
      [次のチャプターへ進む](./How-to-use.md)<br>
