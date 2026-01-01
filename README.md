@@ -29,7 +29,7 @@
  (3) デイレクトリートラバーサル<br>
     ア　デイレクトリートラバーサルの脆弱性体験<br>
 　　　　[次のチャプターへ進む](./Directory_traversal.md)<br>
-    イ　デイレクトリートラバーサルの脆弱性対策<br
+    イ　デイレクトリートラバーサルの脆弱性対策<br>
      　[次のチャプターへ進む](./Directory_traversal_VulnerabilityCountermeasures.md)<br>
  (4) OSコマンドインジェクション<br>
  　　ア　OSコマンドインジェクションの脆弱性体験<br>
