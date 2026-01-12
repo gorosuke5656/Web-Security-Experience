@@ -86,7 +86,21 @@ Pythonにより起動後、ブラウザでアクセスできることを確認�
 
 
 ### パケットとログを確認してみましょう！！<br>
-![Diagram](./images/xss-22.jpg)<br>
+今回XSS攻撃を受けた内容についてサーバーのログ及びパケットで確認してみます！！<br>
+<img width="1042" height="632" alt="image" src="https://github.com/user-attachments/assets/da4483c6-af46-4c0d-9358-28fd88b54d9b" />
+
+〇　サーバーのアクセスログについて<br>
+今回の環境におけるWebサーバーのアクセスログは以下の場所になります<br>
+more /var/log/apache2/access_log<br>
+<img width="1022" height="572" alt="image" src="https://github.com/user-attachments/assets/218fe320-3f52-4e7e-b91b-acce98a061af" />
+
+〇　サーバーのパケット取得について<br>
+ サーバー上でTcpdumpを起動し、該当するパケットを取得します<br>
+
+
+
+
+
 
 cyber chefを使用してパケットとログをデコードします！<br>
 https://gchq.github.io/CyberChef/<br>
