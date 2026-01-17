@@ -9,7 +9,7 @@
 
 ## XSSの種類<br>
  ### 反射型XSS
-　ユーザが送信するHTTPリクエストパラメータをＨＴＴＰレスポンスとしてHTMLに表示してしまうもの<br>
+　ユーザが送信するHTTPリクエストパラメータをHTTPレスポンスとしてHTMLに表示してしまうもの<br>
  ### 格納型XSS
 　Webサイトにある掲示板やコメントの機能等を利用して悪意あるスクリプトを実行できるようにするもの<br>
 　（反射型のようなパラメータでなく、そのページを閲覧しただけで、任意のスクリプトが実行。。）<br>
@@ -87,41 +87,44 @@ Pythonにより起動後、ブラウザでアクセスできることを確認�
 
 ### パケットとログを確認してみましょう！！<br>
 今回XSS攻撃を受けた内容についてサーバーのログ及びパケットで確認してみます！！<br>
-<img width="1042" height="632" alt="image" src="https://github.com/user-attachments/assets/da4483c6-af46-4c0d-9358-28fd88b54d9b" />
+<img width="1038" height="681" alt="image" src="https://github.com/user-attachments/assets/bf384e0f-bee8-4fdf-a59b-6607d8dcc72a" />
 
-〇　サーバーのアクセスログについて<br>
-今回の環境におけるWebサーバーのアクセスログは以下の場所になります<br>
-more /var/log/apache2/access_log<br>
-<img width="1022" height="572" alt="image" src="https://github.com/user-attachments/assets/218fe320-3f52-4e7e-b91b-acce98a061af" />
+<img width="1040" height="682" alt="image" src="https://github.com/user-attachments/assets/ab7dfff7-bf0a-4266-8252-482a63a57265" />
 
-〇　サーバーのパケット取得について<br>
- サーバー上でTcpdumpを起動し、該当するパケットを取得します<br>
+#### アクセスログの確認
+<img width="1032" height="642" alt="image" src="https://github.com/user-attachments/assets/daf40526-cbad-4eab-af48-cf9bfa74d37e" />
 
+#### パケットの確認
+<img width="1039" height="643" alt="image" src="https://github.com/user-attachments/assets/75a5dc0d-7880-47af-86a1-23ed6694a09f" />
 
+<img width="1042" height="646" alt="image" src="https://github.com/user-attachments/assets/b723e6a3-d104-4ddf-9ec1-abd6ae8e56e5" />
 
+<img width="1033" height="644" alt="image" src="https://github.com/user-attachments/assets/c43eb600-5302-46c4-86c9-d53831c2b5d5" />
+tcpdumpで取得したパケットをダウンロードします!<br>
+<img width="1046" height="644" alt="image" src="https://github.com/user-attachments/assets/86af44e9-b1c0-44ec-ab8e-deac5cfaca25" />
 
+Wiresharkで確認するパケット<br>
+<img width="1043" height="643" alt="image" src="https://github.com/user-attachments/assets/d5ad63c9-cb4c-4978-9ed7-2284c8b137ec" />
 
+分析　⇒　追跡　⇒　TCPストリームによる解析<br>
+<img width="1053" height="638" alt="image" src="https://github.com/user-attachments/assets/5f0b0cf7-e208-4883-9db6-9892895c3575" />
+<img width="1052" height="649" alt="image" src="https://github.com/user-attachments/assets/ae507821-2ac7-438d-865d-2f0eed068c07" />
 
-cyber chefを使用してパケットとログをデコードします！<br>
-https://gchq.github.io/CyberChef/<br>
-
-#### [おさらい]エンコードとは？？<br>
-
-![Diagram](./images/xss-27.jpg)<br>
-![Diagram](./images/xss-28.jpg)<br>
-![Diagram](./images/xss-29.jpg)<br>
-
-cyber chefを使用してURLエンコードされた場所をデコードします！<br>
-![Diagram](./images/xss-23.jpg)<br>
-
-![Diagram](./images/xss-24.jpg)<br>
-
-![Diagram](./images/xss-25.jpg)<br>
-
-![Diagram](./images/xss-26.jpg)<br>
+おさらい　エンコード/デコードとは??<br>
+<img width="1045" height="636" alt="image" src="https://github.com/user-attachments/assets/0a250dde-baf1-4c2b-ab2d-d19917cd581f" />
+おさらい　URLエンコードとは??<br>
+<img width="1037" height="632" alt="image" src="https://github.com/user-attachments/assets/0414cbaa-172a-49b7-ad7e-f3622ab57c05" />
+<img width="1033" height="645" alt="image" src="https://github.com/user-attachments/assets/f28ee16f-0353-4efc-a28d-0cc29fe1ea6c" />
+<img width="1038" height="634" alt="image" src="https://github.com/user-attachments/assets/3bcfacce-bb18-421d-98f7-687f4572498f" />
+<img width="1025" height="633" alt="image" src="https://github.com/user-attachments/assets/57082695-05f3-46f8-8b80-e8635edfadda" />
 
 
-![Diagram](./images/xss-30.jpg)<br>
+
+
+
+
+
+
 
 [目次に戻る](./README.md) <br>
 
