@@ -29,12 +29,10 @@
  ア　デイレクトリートラバーサルの脆弱性体験[次のチャプターへ進む](./Directory_traversal.md)<br>
  イ　デイレクトリートラバーサルの脆弱性対策[次のチャプターへ進む](./Directory_traversal_VulnerabilityCountermeasures.md)<br>
 
-５　本環境の使用方法<br>
-     [次のチャプターへ進む](./How-to-use.md)<br>
+５　本環境の使用方法[次のチャプターへ進む](./How-to-use.md)<br>
 使用する際はPaiza cloudへのアカウント登録が必要です（無料版で問題ありません）<br>
 
-【Paiza cloud】<br>
-https://paiza.cloud/ja/<br>
+【Paiza cloud】https://paiza.cloud/ja/<br>
 
 今回使用したコード等はZIP化していますので解凍後、使用してください<br>
 scripts配下に以下を格納しています<br>
