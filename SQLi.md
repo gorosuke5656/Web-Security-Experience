@@ -48,31 +48,62 @@ sudo su でrootになっておく<br>
 
 
 ### SQLインジェクション体験：正常な動作の確認<br>
-![Diagram](./images/SQLi-11.jpg)<br>
-〇　ユーザ/パスワードを入力します(ユーザ名:test/パスワードtest)<br>
+<img width="1039" height="632" alt="image" src="https://github.com/user-attachments/assets/1ac3f49d-9428-4fb3-b365-0b45a6069642" />
 
-![Diagram](./images/SQLi-12.jpg)<br>
+#### ユーザ/パスワードを入力します(ユーザ名:test/パスワードtest)<br>
+<img width="1033" height="630" alt="image" src="https://github.com/user-attachments/assets/82d515ff-0b34-46c5-9b55-f339ddf35f8e" />
 
-〇　ユーザ名/パスワードに対応するメールアドレスが検索できました！<br>
+#### ユーザ名/パスワードに対応するメールアドレスが検索できました！<br>
+<img width="1037" height="628" alt="image" src="https://github.com/user-attachments/assets/f63b73f1-f0e2-4dc4-ba26-95b6b7548f60" />
 
-![Diagram](./images/SQLi-13.jpg)<br>
 
 
 ### SQLインジェクション異常な動作の確認<br>　　  
+<img width="1041" height="634" alt="image" src="https://github.com/user-attachments/assets/a12259b5-1f5a-43a8-b61a-e1b86b363bf6" />
+
+#### ユーザ/パスワードを入力します(ユーザ名:test/パスワードtest' OR ' 1=1)<br>
+<img width="1016" height="615" alt="image" src="https://github.com/user-attachments/assets/4e230d0d-0bfc-406b-82f1-3208d1b09fbc" />
+
+#### SQLインシェクションによりすべてのメールアドレス一覧が表示されてしまいました。。<br>
+<img width="1046" height="635" alt="image" src="https://github.com/user-attachments/assets/cebd6b9a-e5bd-4992-99ed-0ab7ffd10214" />
 
 
-![Diagram](./images/SQLi-14.jpg)<br>
+#### パケットとログを確認してみましょう！！<br>
 
-〇　ユーザ/パスワードを入力します(ユーザ名:test/パスワードtest' OR ' 1=1)<br>
+##### パケットの取得及び確認<br>
+<img width="1039" height="637" alt="image" src="https://github.com/user-attachments/assets/d258d3b6-39cb-48fa-8a91-a9b2650ce76d" />
 
-![Diagram](./images/SQLi-15.jpg)<br>
+<img width="1030" height="617" alt="image" src="https://github.com/user-attachments/assets/926b0436-f43a-4e35-bd51-0db51d0027d5" />
 
-〇　SQLインシェクションによりすべてのメールアドレス一覧が表示されてしまいました。。<br>
+<img width="1037" height="630" alt="image" src="https://github.com/user-attachments/assets/7c08bbfb-e976-4576-a82c-02fb65b79f05" />
 
-![Diagram](./images/SQLi-16.jpg)<br>
+<img width="1037" height="635" alt="image" src="https://github.com/user-attachments/assets/95403566-7b41-4f2a-88bb-0468c7d4aeb6" />
 
+##### 取得パケットからWiresharkによるオブジェクトのエクスポート<br>
+<img width="1040" height="631" alt="image" src="https://github.com/user-attachments/assets/9205b725-a4c6-430c-912d-20905abe18ba" />
 
-##### パケットとログを確認してみましょう！！<br>
+<img width="1039" height="619" alt="image" src="https://github.com/user-attachments/assets/9bc74397-5cb3-420a-9d21-b848dc6916fb" />
+
+##### Cyberchefによる文字列の確認<br>
+<img width="1031" height="563" alt="image" src="https://github.com/user-attachments/assets/18bc4be4-0a36-43de-8039-0c48960de273" />
+
+##### アクセスログの取得及び確認<br>
+<img width="1033" height="625" alt="image" src="https://github.com/user-attachments/assets/b5d65221-bae5-4f15-91c0-28a948064c91" />
+
+##### 【おさらい】GET送信とPOST送信の違い<br>
+<img width="1029" height="659" alt="image" src="https://github.com/user-attachments/assets/8585fcda-d64e-40e7-b09a-5680b2fd8275" />
+
+##### 上記の通り通常POST送信されたログはWebのアクセスログに残らないため、MYSQLでクエリ－ログを取得できるように設定します<br>
+
+###### MYSQLクエリログ取得のための設定<br>
+<img width="1036" height="613" alt="image" src="https://github.com/user-attachments/assets/a4f11fe7-7805-49b2-a536-6dd610001183" />
+###### 設定したクエリログの確認<br>
+<img width="1021" height="615" alt="image" src="https://github.com/user-attachments/assets/71462280-2198-4322-a54c-9cb0e1dfa074" />
+
+<img width="1026" height="665" alt="image" src="https://github.com/user-attachments/assets/7b441395-e53b-4506-85e2-bee918efce5c" />
+
+これによりPOST送信された内容を確認することができます!!<br>
+
 
 
 [目次に戻る](./README.md) <br>
